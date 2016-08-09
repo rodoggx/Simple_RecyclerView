@@ -21,4 +21,12 @@
         android:layout_height="wrap_content">
 
     </android.support.v7.widget.RecyclerView>
+
+    <Button
+        android:id="@+id/mBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="doSnackbar"
+        android:text="Snackbar"/>
+
 </LinearLayout>

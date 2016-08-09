@@ -1,9 +1,11 @@
 package com.example.simplerecyclerview;
 
+import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.View;
 
 import java.util.ArrayList;
 
@@ -35,5 +37,12 @@ public class MainActivity extends AppCompatActivity {
        mRecyclerView.setAdapter(mMyAdapter);
        mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
 
+    }
+
+    public void doSnackbar(View view) {
+        Snackbar snackbar = Snackbar
+                .make(view, "Welcome to the TerrorDome", Snackbar.LENGTH_SHORT);
+
+        snackbar.show();
     }
 }

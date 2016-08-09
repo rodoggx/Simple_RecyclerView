@@ -10,10 +10,10 @@ import java.util.ArrayList;
 
 public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
 
-    //implement an array
+//implement an array
     private ArrayList<String> mStrings;
 
-    //implement all methods
+//implement all methods
     public static class ViewHolder extends RecyclerView.ViewHolder {
 
 //reference to viewholder
@@ -23,7 +23,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
     public ViewHolder(View itemView) {
         super(itemView);
 
-        //call the view id
+//call the view id
         textViewName = (TextView) itemView.findViewById(R.id.rlist);
     }
 }
